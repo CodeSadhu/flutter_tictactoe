@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class CustomButton extends StatelessWidget {
   final VoidCallback onTap;
@@ -21,8 +22,9 @@ class CustomButton extends StatelessWidget {
         onPressed: onTap,
         child: Text(
           text,
-          style: const TextStyle(
+          style: GoogleFonts.muli(
             fontSize: 16,
+            fontWeight: FontWeight.bold,
           ),
         ),
         style: ElevatedButton.styleFrom(
